@@ -34,7 +34,8 @@ DyPE is a novel, training-free method that allows pre-trained diffusion transfor
 It works by taking advantage of the spectral progression inherent to the diffusion process. By dynamically adjusting the model's positional encodings at each step, DyPE matches their frequency spectrum with the current stage of the generative process—focusing on low-frequency structures early on and resolving high-frequency details in later steps. This prevents the repeating artifacts and structural degradation typically seen when pushing models beyond their native resolution.
 
 <div align="center">
-      <img src="./example_workflows/dype_example.png" alt="ComfyUI-DyPE example workflow" width="70%">
+
+  <img alt="ComfyUI-DyPE example workflow" width="70%" src="https://github.com/user-attachments/assets/e5c1d202-b2c4-474b-b52f-9691ab44c47a" />
       <p><sub><i>A simple, single-node integration to patch your FLUX model for high-resolution generation.</i></sub></p>
   </div>
   
@@ -43,9 +44,13 @@ This node provides a seamless, "plug-and-play" integration of DyPE into any FLUX
 **✨ Key Features:**
 *   **True High-Resolution Generation:** Push FLUX models to 4096x4096 and beyond while maintaining global coherence and fine detail.
 *   **Single-Node Integration:** Simply place the `DyPE for FLUX` node after your model loader to patch the model. No complex workflow changes required.
-*   **Full Compatibility:** Works seamlessly with your existing ComfyUI workflows, samplers, schedulers, and other optimization nodes like Self-Attention Guidance (SAG) or quantization.
+*   **Full Compatibility:** Works seamlessly with your existing ComfyUI workflows, samplers, schedulers, and other optimization nodes like Self-Attention or quantization.
 *   **Fine-Grained Control:** Exposes key DyPE hyperparameters, allowing you to tune the algorithm's strength and behavior for optimal results at different target resolutions.
 *   **Zero Inference Overhead:** DyPE's adjustments happen on-the-fly with negligible performance impact.
+
+<div align="center">
+<img alt="Node" width="70%" src="https://github.com/user-attachments/assets/3ef232d2-6268-4e3d-8522-b704dade03ac" />
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
