@@ -1,0 +1,15 @@
+[project]
+name = "ComfyUI-DyPE"
+description = "DyPE for FLUX. Artifact-free 4K+ image generation."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["torch"]
+
+[project.urls]
+Repository = "https://github.com/wildminder/ComfyUI-DyPE"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "wildai"
+DisplayName = "ComfyUI-DyPE"
+Icon = ""
